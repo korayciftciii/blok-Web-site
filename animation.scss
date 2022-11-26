@@ -1,0 +1,42 @@
+@keyframes soldangelenyazı{
+    0%{
+  transform:translateX(-50%) ;
+    }
+    70%{
+     transform: translateX(20%);
+    }
+    100%{
+   transform: translateX(0);
+    }
+}
+@keyframes sağdangelenyazı{
+    0%{
+  transform:translateX(50%) ;
+    }
+    70%{
+     transform: translateX(-20%);
+    }
+    100%{
+   transform: translateX(0);
+    }
+}
+@keyframes çık{
+    0%{
+     transform: scale(0);
+    }
+    70%{
+    transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes çık2{
+    0%{
+     transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+

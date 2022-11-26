@@ -1,0 +1,111 @@
+@import 'veriebles';
+@import 'mixin';
+@import 'reset';
+@import 'animation';
+@import 'layouts';
+@import 'companents';
+
+
+.section{
+    margin: 1rem 0;
+    padding: 1rem;
+    &-title{
+        text-align: center;
+        margin: 1rem;
+
+    }
+    &-accent{
+        background-color: $main-color;
+    }
+}
+
+
+
+.eğitim-card{
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    border: 1px solid $main-font-color;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center center;
+     transition: .5s ease-in-out;
+     flex: 1;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &-java{
+        background-image: linear-gradient(to right bottom, rgba(white,0.5),rgba(white,0.9)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7vYmNb9XmoncEFi4pu3hon7t18rswKbAGHU3MR22pqQMCAGTYe4lwK4NxLcYSjuCpsk&usqp=CAU);
+        
+    }    
+
+    &-nodejs{
+        background-image: linear-gradient(to right bottom, rgba(white,0.5),rgba(white,0.9)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7vYmNb9XmoncEFi4pu3hon7t18rswKbAGHU3MR22pqQMCAGTYe4lwK4NxLcYSjuCpsk&usqp=CAU);
+        
+    }    
+
+    &-flutter{
+        background-image: linear-gradient(to right bottom, rgba(white,0.5),rgba(white,0.9)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7vYmNb9XmoncEFi4pu3hon7t18rswKbAGHU3MR22pqQMCAGTYe4lwK4NxLcYSjuCpsk&usqp=CAU);
+        
+    }    
+    .kurslarım-footer{
+
+        width: 100%;
+        background:#1B2522 ;
+        height:10rem;
+        display: flex;
+        @include responsive(small){
+            display: flex;
+            justify-content: space-between;
+        }
+      }
+    .boyut{
+        display: flex;
+        margin: 2.5em 7.3em;
+        width: 5rem;
+        height: 5rem;
+      
+      }
+      .boyut:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+ 
+
+}
+.form{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-label{
+color: $main-font-color;
+font-weight: bold;
+display: block;
+}
+.form-input{
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: .75;
+    outline: none;
+    border: 1px solid $main-font-color;
+    border-radius: 0.4rem;
+    padding: .5rem;
+    color: inherit;
+    resize: vertical;
+    max-height: 150px;
+    &:hover,&:focus{
+        border-color: $main-color;
+
+    }
+
+}
+.btn-container{
+    text-align: right;
+}
+.btn-kare{
+    font-size: 1.1rem;
+
+    border-radius: .4rem;
+    padding: .5rem 1rem;
+}

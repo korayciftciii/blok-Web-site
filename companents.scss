@@ -1,0 +1,41 @@
+.header-title{
+    font-size: 2rem;
+    color: white;
+    animation: soldangelenyazı 1s;
+}
+.header-subtitle{
+    font-size: 1.2rem;
+    color: white;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    animation: sağdangelenyazı 1s;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: $main-color;
+    border-radius: 1000px;
+    padding: 0.35rem;
+     outline: none;
+     border: none;
+     animation: çık 1s;
+    &:hover{
+        color: white;
+        background-color: $main-color-light;
+       
+    }
+  
+}
+.icon-asagı{
+    position: absolute;
+    width: 4rem;
+    bottom: 1rem;
+    animation: çık2 1s alternate infinite;
+}
+.icon-asagı-1{
+    position: absolute;
+    width: 6rem;
+    bottom: 2rem;
+    animation: çık2 1s alternate infinite;
+}
+

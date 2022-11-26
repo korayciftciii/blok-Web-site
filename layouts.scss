@@ -1,0 +1,95 @@
+body{
+    font-family: poppins, sans-serif;
+    color: $main-font-color;
+}
+.fullscrean-header{
+    
+    height: 100vh;
+    @include flexcenter;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom, rgba($main-color-dark,.5),rgba($main-color,.5)), url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    background-size: cover;
+   background-position-x: 50%;
+   background-position-y: 50%;
+}
+.fullscrean-header-1{
+    height: 100vh;
+    @include flexcenter;
+    flex-direction:  column;
+    background-image: linear-gradient(to right bottom , rgba($main-color-dark,.5),rgba($main-color,.5)), url(https://blog.hubspot.com/hubfs/Site%20owner%20using%20the%20CSS%20background%20position%20property.jpg);
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.nav{
+    background-color: $main-font-color;
+   padding: .4rem .4rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   text-align: center;
+   
+   @include responsive(small){
+       display: flex;
+       justify-content: space-between;
+   }
+  
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center; 
+   
+}
+.nav-list-item{
+    
+        text-decoration: none;
+        color: white;
+        margin-left: 1rem;
+
+    
+}
+.nav-list-item:hover{
+  color: $main-color;
+}
+.eğitim-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include responsive(medium){
+        flex-direction: row;
+        max-width: 90%;
+    }
+    @include responsive(desktop){
+        flex-direction: row;
+        max-width: 70%;
+    }
+}
+.hakkımda-grid{
+    display: grid;
+    grid-template-columns: minmax(auto,500px);
+    row-gap: 2rem;
+    padding: .5rem;
+    @include responsive(medium){
+        grid-template-columns: repeat(2, minmax(auto,500px));
+        justify-content: center;
+   
+    }
+ }
+   
+  
+.hakkımda-grid-item{
+    @include flexcenter;
+}
+.hakkımda-grid-yazı{
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.hakkımda-grid-resim{
+    width: 20% ;
+}
